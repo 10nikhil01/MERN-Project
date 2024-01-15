@@ -33,16 +33,16 @@ export default function User() {
       containerId: "D",
     });
   const [users, setUsers] = useState([]);
+  const fetchData = async () => {
+    const response = await axios.get("http://localhost:8000/api/getall");
+    setUsers(response.data);
+  };
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get("http://localhost:8000/api/getall");
-      setUsers(response.data);
-    };
     fetchData();
-    if (users.length === 0) {
-      notifyA();
-    }
   }, [users]);
+  if (users.length === 0) {
+    notifyA();
+  }
 
   const deleteUser = async (userId) => {
     await axios
