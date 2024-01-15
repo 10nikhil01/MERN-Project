@@ -39,7 +39,7 @@ export default function User() {
   };
   useEffect(() => {
     fetchData();
-  }, [users]);
+  }, []);
   if (users.length === 0) {
     notifyA();
   }
