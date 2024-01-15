@@ -34,7 +34,7 @@ export default function User() {
     });
   const [users, setUsers] = useState([]);
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:8000/api/getall");
+    const response = await axios.get("https://mern-project-api-tau.vercel.app/api/getall");
     setUsers(response.data);
   };
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function User() {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`http://localhost:8000/api/delete/${userId}`)
+      .delete(`https://mern-project-api-tau.vercel.app/api/delete/${userId}`)
       .then((response) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
         console.log(response);
