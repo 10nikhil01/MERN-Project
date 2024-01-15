@@ -15,10 +15,10 @@ This project is a MERN (MongoDB, Express.js, React, Node.js) application with se
    git clone 
    cd repo
 2.1 Install client dependencies
-    ```bash
+   ```bash
      cd client
      npm install
-    ```
+   ```
 2.2 Install server dependencies
    ```bash
      cd ../server
