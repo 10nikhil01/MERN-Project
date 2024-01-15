@@ -11,7 +11,7 @@ app.use(cors());
 dotenv.config();
 
 const PORT = process.env.PORT || 7000;
-const MONGOURL = process.env.DB_CONNECTION_STRING;
+const MONGOURL = process.env.MONGOURL;
 
 mongoose.connect(MONGOURL, {
   useNewUrlParser: true,
