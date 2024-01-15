@@ -26,7 +26,7 @@ npm install
 ```
 
 3. Create a .env file in the server folder.
-   # server/.env
+   ## server/.env
 
 4. MongoDB connection string
    MONGODB_URI=your_mongodb_connection_string
@@ -37,12 +37,12 @@ npm install
 Replace your_mongodb_connection_string with your actual MongoDB connection string.
 
 6. Start the server:
-   # From the 'server' folder
+   ## From the 'server' folder
    ```bash
    npm start
    ```
-   Start the client:
-   # From the 'client' folder
+ 7.  Start the client:
+   ## From the 'client' folder
    ```bash
    npm start
    ```
