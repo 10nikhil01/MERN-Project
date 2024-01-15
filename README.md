@@ -15,12 +15,15 @@ This project is a MERN (MongoDB, Express.js, React, Node.js) application with se
    git clone 
    cd repo
 2.1 Install client dependencies
+```bash
 cd client
 npm install
-
+```
 2.2 Install server dependencies
+```bash
 cd ../server
 npm install
+```
 
 3. Create a .env file in the server folder.
    # server/.env
@@ -35,8 +38,11 @@ Replace your_mongodb_connection_string with your actual MongoDB connection strin
 
 6. Start the server:
    # From the 'server' folder
+   ```bash
    npm start
-
+   ```
    Start the client:
    # From the 'client' folder
+   ```bash
    npm start
+   ```
