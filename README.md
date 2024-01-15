@@ -42,7 +42,7 @@ Replace your_mongodb_connection_string with your actual MongoDB connection strin
    npm start
    ```
  7.  Start the client:
-   ## From the 'client' folder
+     ##From the 'client' folder
    ```bash
    npm start
    ```
