@@ -33,7 +33,7 @@ function AddUser() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/create", user)
+      .post("https://mern-project-api-tau.vercel.app/api/create", user)
       .then(() => {
         notifyB();
         navigate("/");
