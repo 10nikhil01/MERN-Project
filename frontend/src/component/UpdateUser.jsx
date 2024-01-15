@@ -31,7 +31,7 @@ export default function UpdateUser() {
     });
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/getone/${id}`)
+      .get(`https://mern-project-api-tau.vercel.app/api/getone/${id}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -42,7 +42,7 @@ export default function UpdateUser() {
   const submitChange = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:8000/api/update/${id}`, user);
+      await axios.put(`https://mern-project-api-tau.vercel.app/api/update/${id}`, user);
       notifyC();
       navigate("/");
     } catch (error) {
