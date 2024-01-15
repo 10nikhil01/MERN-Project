@@ -11,10 +11,12 @@ app.use(cors());
 dotenv.config();
 
 const PORT = process.env.PORT || 7000;
-const URL = process.env.MONGOURL;
+const MONGOURL = process.env.DB_CONNECTION_STRING;
 
-mongoose
-  .connect(URL)
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(() => {
     console.log("MongoDB Connected successfully !!");
     app.listen(PORT, () => {
